@@ -2,6 +2,10 @@ write-host "Installing Chocolatey" -foregroundcolor green
 write-host "Setting execution policy ByPass" -foregroundcolor yellow
 Set-ExecutionPolicy Bypass; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
+write-host "Registering chocolatey as package manager"
+get-packageprovider -name chocolatey
+set-packagesource -name chocolatey
+
 write-host "Refreshing environment variables" -foregroundcolor green
 refreshenv
 
@@ -11,9 +15,9 @@ mkdir $CACHE_DIR
 choco config set cacheLocation $CACHE_DIR
 
 write-host "Installing all programs using chocolatey" -foregroundcolor green
-choco install googlechrome firefox evernote todoist 1password atom -y
+choco install googlechrome firefox evernote todoist atom -y
 choco install jdk8 maven git sourcetree dropbox nvm -y
-choco install superputty  docker docker-compose docker-machine virtualbox docker-kitematic -y
+choco install superputty docker docker-compose docker-machine virtualbox docker-kitematic -y
 
 write-host "Configuring installed packages" -foregroundcolor green
 refreshenv
@@ -22,3 +26,7 @@ docker-machine create default
 
 write-host "Resetting chocolatey cache"
 rm -r $CACHE_DIR\*
+
+write-host "Registering chocolatey as package manager"
+get-packageprovider -name chocolatey
+set-packagesource -name chocolatey
