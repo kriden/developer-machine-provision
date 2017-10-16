@@ -26,7 +26,3 @@ docker-machine create default
 
 write-host "Resetting chocolatey cache"
 rm -r $CACHE_DIR\*
-
-write-host "Registering chocolatey as package manager"
-get-packageprovider -name chocolatey
-set-packagesource -name chocolatey
