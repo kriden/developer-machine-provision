@@ -2,7 +2,7 @@ write-host "Installing Chocolatey" -foregroundcolor green
 write-host "Setting execution policy ByPass" -foregroundcolor yellow
 Set-ExecutionPolicy Bypass; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
-write-host "Registering chocolatey as package manager"
+write-host "Registering chocolatey as package manager" -foregroundcolor green
 get-packageprovider -name chocolatey
 set-packagesource -name chocolatey
 
