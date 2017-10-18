@@ -1,5 +1,7 @@
 write-host "Opening browser windows for some tools" -foregroundcolor green
+start https://www.evernote.com
 start https://www.1password.com
+start https://hyper.is
 
 write-host "Installing Chocolatey" -foregroundcolor green
 write-host "Setting execution policy ByPass" -foregroundcolor yellow
