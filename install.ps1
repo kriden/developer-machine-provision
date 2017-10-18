@@ -1,3 +1,6 @@
+write-host "Opening browser windows for some tools" -foregroundcolor green
+start https://www.1password.com
+
 write-host "Installing Chocolatey" -foregroundcolor green
 write-host "Setting execution policy ByPass" -foregroundcolor yellow
 Set-ExecutionPolicy Bypass; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
