@@ -21,7 +21,7 @@ choco config set cacheLocation $CACHE_DIR
 
 write-host "Installing all programs using chocolatey" -foregroundcolor green
 choco install googlechrome firefox evernote todoist atom -y
-choco install jdk8 maven git sourcetree dropbox nvm -y
+choco install jdk8 maven git sourcetree dropbox intellijidea-ultimate nvm -y
 choco install superputty docker docker-compose docker-machine virtualbox docker-kitematic -y
 
 write-host "Configuring installed packages" -foregroundcolor green
