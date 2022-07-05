@@ -1,39 +1,43 @@
 #!/bin/sh
-
 # Installing brew
-usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-# Brew maintenance - Install java, origin of everything :)
+# Brew maintenance
+brew tap homebrew/cask-versions
 brew update
-brew tap caskroom/cask
-brew tap caskroom/versions
-brew cask install groovy
+brew tap homebrew/cask
 
-# Regular brew installs
+# Browsers
+brew install --cask firefox
+brew install --cask google-chrome
+
+# Development tooling
+brew install groovy
+brew install java
 brew install maven
 brew install git
 brew install jenv
 brew install jq
 brew install parallel
+brew install --cask sourcetree
+brew install --cask visual-studio-code
 
+# Tools
+brew install --cask todoist
+brew install --cask bitwarden
+brew install --cask drawio
+brew install --cask franz
+brew install --cask slack
+brew install --cask termius
+brew install --cask postman
+brew install --cask iterm2
+brew install --cask xmind
 
-# Casks
-brew cask install firefox
-brew cask install sourcetree
-brew cask install todoist
-brew cask install bitwarden
-brew cask install visual-studio-code
-brew cask install bluejeans
-brew cask install drawio
-brew cask install franz
-brew cask install slack
-brew cask install termius
-brew cask install zoomus
-brew cask install microsoft-office
-brew cask install microsoft-teams
-brew cask install postman
-brew cask install iterm2
-brew cask install todoist
+# Communication stuff
+brew install --cask bluejeans
+brew install --cask zoomus
+brew install --cask microsoft-office
+brew install --cask microsoft-teams
 
 # NVM
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
