@@ -7,25 +7,37 @@ usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install
 brew update
 brew tap caskroom/cask
 brew tap caskroom/versions
-brew cask install java8
 brew cask install groovy
 
 # Regular brew installs
 brew install maven
 brew install git
+brew install jenv
+brew install jq
+brew install parallel
+
 
 # Casks
 brew cask install firefox
 brew cask install sourcetree
-brew cask install evernote
 brew cask install todoist
-brew cask install 1password
-brew cask install intellij-idea
-brew cask install dropbox
-brew cask install vagrantbox
-brew cask install vagrant
-brew cask install vagrant-manager
+brew cask install bitwarden
+brew cask install visual-studio-code
+brew cask install bluejeans
+brew cask install drawio
+brew cask install franz
+brew cask install slack
+brew cask install termius
+brew cask install zoomus
+brew cask install microsoft-office
+brew cask install microsoft-teams
+brew cask install postman
+brew cask install iterm2
 
 # NVM
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 nvm install node
+
+# Install AIO
+npm install -g @adobe/aio-cl
+aio plugins:update
