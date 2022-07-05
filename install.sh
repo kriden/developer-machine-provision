@@ -31,6 +31,7 @@ brew install --cask slack
 brew install --cask termius
 brew install --cask postman
 brew install --cask iterm2
+brew install fig
 brew install --cask xmind
 
 # Communication stuff
@@ -44,5 +45,5 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 nvm install node
 
 # Install AIO
-npm install -g @adobe/aio-cl
+npm install -g @adobe/aio-cli
 aio plugins:update
