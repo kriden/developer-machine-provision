@@ -33,6 +33,7 @@ brew cask install microsoft-office
 brew cask install microsoft-teams
 brew cask install postman
 brew cask install iterm2
+brew cask install todoist
 
 # NVM
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
