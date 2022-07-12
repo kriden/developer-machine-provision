@@ -31,6 +31,7 @@ brew install --cask slack
 brew install --cask termius
 brew install --cask postman
 brew install --cask iterm2
+brew install --cask cloudmounter
 brew install fig
 brew install --cask xmind
 
