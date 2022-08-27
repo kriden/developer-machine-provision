@@ -49,7 +49,8 @@ brew install --cask microsoft-teams
 
 # MacOS tooling
 mas install 441258766 #Magnet
-brew install --cask alt-tab
+brew install --cask alt-tab #Better alt tabbing
+brew install --cask fluor #Switch between F & function keys
 
 # NVM
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
