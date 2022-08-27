@@ -39,6 +39,7 @@ brew install --cask iterm2
 brew install --cask cloudmounter
 brew install fig
 brew install --cask xmind
+brew install --cask notion
 
 # Communication stuff
 brew install --cask bluejeans
@@ -46,7 +47,7 @@ brew install --cask zoomus
 brew install --cask microsoft-office
 brew install --cask microsoft-teams
 
-# Tooling
+# MacOS tooling
 mas install 441258766 #Magnet
 brew install --cask alt-tab
 
