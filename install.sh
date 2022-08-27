@@ -1,11 +1,16 @@
 #!/bin/sh
+
 # Installing brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew tap buo/cask-upgrade
 
 # Brew maintenance
 brew tap homebrew/cask-versions
 brew update
 brew tap homebrew/cask
+
+# Mac Apple Store install
+brew install mas
 
 # Browsers
 brew install --cask firefox
@@ -40,6 +45,10 @@ brew install --cask bluejeans
 brew install --cask zoomus
 brew install --cask microsoft-office
 brew install --cask microsoft-teams
+
+# Tooling
+mas install 441258766 #Magnet
+brew install --cask alt-tab
 
 # NVM
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
