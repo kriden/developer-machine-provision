@@ -40,6 +40,7 @@ brew install --cask cloudmounter
 brew install fig
 brew install --cask xmind
 brew install --cask notion
+brew install --cask home-assistant
 
 # Communication stuff
 brew install --cask bluejeans
