@@ -1,5 +1,4 @@
 #!/bin/sh
-
 # Installing brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew tap buo/cask-upgrade
@@ -31,31 +30,21 @@ brew install --cask visual-studio-code
 brew install --cask todoist
 brew install --cask bitwarden
 brew install --cask drawio
-brew install --cask franz
 brew install --cask slack
-brew install --cask termius
 brew install --cask postman
 brew install --cask iterm2
-brew install --cask cloudmounter
 brew install fig
 brew install --cask xmind
-brew install --cask notion
 brew install --cask home-assistant
 
-# Communication stuff
-brew install --cask bluejeans
-brew install --cask zoomus
-brew install --cask microsoft-office
-brew install --cask microsoft-teams
-
 # MacOS tooling
-mas install 441258766 #Magnet
-brew install --cask alt-tab #Better alt tabbing
-brew install --cask fluor #Switch between F & function keys
+mas install 441258766
+brew install --cask alt-tab
+brew install --cask fluor
 
 # NVM
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-nvm install node
+nvm install node --lts
 
 # Install AIO
 npm install -g @adobe/aio-cli
